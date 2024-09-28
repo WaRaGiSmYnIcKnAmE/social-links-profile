@@ -10,7 +10,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
--   Solution URL: [https://www.frontendmentor.io/solutions/qr-code-frontend-mentor-60ep7zjUyO]()
+-   Solution URL: [https://www.frontendmentor.io/solutions/my-social-links-profile-4X7DNJVZR7]()
 -   Live Site URL: [https://WaRaGiSmYnIcKnAmE.github.io/social-links-profile/]()
 
 ## My process
