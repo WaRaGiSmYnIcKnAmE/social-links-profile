@@ -1,3 +1,47 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
 :root {
     --green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
@@ -14,24 +58,25 @@ html {
 }
 
 img {
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
     object-fit: cover;
 }
 
 h2 {
-    margin: 30px auto 5px;
+    margin: 1.9rem auto 0.3rem;
 }
 
-h5 {
-    margin: 5px;
+h3 {
+    font-size: 0.83rem;
+    margin: 0.3rem;
     color: var(--green);
 }
 
 p {
-    margin: 25px auto 15px;
-    font-size: 14px;
+    margin: 1.56rem auto 1rem;
+    font-size: 0.875rem;
     color: hsl(0, 0%, 70%);
 }
 
@@ -40,13 +85,13 @@ a {
     color: var(--white);
     background-color: var(--gray-700);
 
-    margin: 8px;
-    padding: 15px;
-    width: 75%;
+    margin: 0.5rem;
+    padding: 0.94rem;
+    width: 80%;
 
     text-decoration: none;
 
-    border-radius: 10px;text-align: center;
+    border-radius: 0.625rem;text-align: center;
 }
 
 a:hover {
@@ -56,19 +101,32 @@ a:hover {
     cursor: pointer;
 }
 
-.card {
+main {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 
-    max-width: 380px;
-    padding: 45px 10px 30px;
+    max-width: 28rem;
+    padding: 2.813rem 0.625rem 1.875rem;
 
     align-items: center;
     justify-content: center;
 
-    margin: 150px auto;
+    margin: 9.375rem auto;
 
     background-color: var(--gray-800);
-    border-radius: 12px;
+    border-radius: 0.75rem;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
